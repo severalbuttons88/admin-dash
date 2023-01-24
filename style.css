@@ -1,0 +1,46 @@
+:root {
+}
+
+body {
+    display:flex;
+    width: 100vw;
+}
+.sidebar {
+    order:-1;
+}
+.flex-wrapper {
+    display:Flex;
+    flex-direction: column;
+    flex:1;
+ 
+}
+header {
+    display:Flex;
+    flex-direction: column;
+
+}
+.header-top {
+    display:Flex;
+    justify-content: space-between;
+
+}
+.subheader {
+    display:Flex;
+    justify-content: space-between;
+}
+.project-header {
+    display:flex;
+    justify-content: space-between;
+}
+.project-grid {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.grid-container {
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+
