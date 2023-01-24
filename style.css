@@ -75,6 +75,10 @@ header {
 .subheader-two {
     margin-right: 25px;
 }
+.trending-header {
+    font-size: 18px;
+    height: 50px;
+}
 .subheader-button {
     background-color: var(--blue_background);
 
@@ -178,6 +182,7 @@ nav {
   display:flex;
   flex-direction: column;
   gap: 2px;
+  margin-bottom: 30px;
 }
 .side-button {
   text-decoration: none;
