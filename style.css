@@ -1,4 +1,5 @@
 :root {
+    --blue_background:rgb(16, 180, 245);
 }
 html {
   font-family: "Courier New", Courier, monospace;
@@ -10,14 +11,15 @@ body {
 }
 .sidebar {
   order: -1;
-  background-color: rgb(37, 179, 235);
+  background-color: var(--blue_background);
   padding: 6px;
-  color: rgb(236, 234, 234);
+  color: rgba(255, 255, 255, 0.932);
 }
 .flex-wrapper {
   display: Flex;
   flex-direction: column;
   flex: 1;
+  background-color: rgb(224, 224, 224);
 }
 main {
   background-color: rgb(224, 224, 224);
@@ -25,12 +27,27 @@ main {
 header {
   display: Flex;
   flex-direction: column;
+  border: 1px solid black;
+  border-radius: 9px;
+  background-color: white;
+}
+.search-style {
+    background-color: rgba(212, 219, 252, 0.664);
+    width: 600px;
+    height:1.7rem;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+.search-style:focus {
+    outline: none;
 }
 .header-top {
   display: Flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  padding-left: 50px;
+  margin-bottom: 15px;
 }
 .search {
   display: flex;
@@ -46,12 +63,30 @@ header {
 }
 .welcome-message {
   display: flex;
+  gap: 8px;
+  margin-left: 10px;
+  align-items: center;
 }
 .subheader {
   display: Flex;
   justify-content: space-between;
   align-items: center;
 }
+.subheader-two {
+    margin-right: 25px;
+}
+.subheader-button {
+    background-color: var(--blue_background);
+
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 90px;
+} 
 .website-updates-trending-wrapper {
   display: flex;
   flex-direction: column;
@@ -106,6 +141,21 @@ nav {
 .trending > div {
   display: flex;
 }
+.trending-card {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    padding-left: 5px;
+}
+.trending-card>div>p {
+    font-size: 12px;
+}
+.trending-card>div>h5 {
+    font-size: 14px;
+    font-weight: bold;
+}
 .small-circle {
   width: 30px;
   height: 30px;
@@ -125,7 +175,9 @@ nav {
   margin-top: 4px;
 }
 .trending {
-  background-color: lightcoral;
+  display:flex;
+  flex-direction: column;
+  gap: 2px;
 }
 .side-button {
   text-decoration: none;
