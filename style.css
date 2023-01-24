@@ -130,6 +130,7 @@ p {
   flex-direction: column;
   gap: 40px;
   font-size: 25px;
+  margin-top: 350px;
 }
 nav {
   display: flex;
